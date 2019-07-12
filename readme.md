@@ -16,6 +16,8 @@ Download the datasets, create soft links for them to [exp/data](./exp/data) and 
 ## Usage:
 Both training and testing functions are provided by `model/hourglass_um_crop_tiny.py`. Here is an example:
 ```bash
+python model/hourglass_um_crop_tiny.py --dataset 'nyu' --batch_size 40 --num_stack 1 --fea_num 16 --debug_level 2 --is_train True
+python model/hourglass_um_crop_tiny.py --dataset 'nyu' --batch_size 40 --num_stack 2 --fea_num 128 --debug_level 2 --is_train True
 python model/hourglass_um_crop_tiny.py --dataset 'icvl' --batch_size 40 --num_stack 2 --fea_num 128 --debug_level 2 --is_train True
 ```
 where the hyper parameter configuration is explained in the source python files.
